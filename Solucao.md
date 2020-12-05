@@ -20,10 +20,15 @@ Foi realizada a containerização de ambos os subsistemas (Front, Back e DB) em 
 * **Code Climate**: Foi adicionado ao repositório o indicador de qualidade de código medido pela ferramenta CodeClimate, que também realiza sua checagem a cada commit realizado. A configuração desta ferramenta é feita totalmente pela sua [interface web](https://codeclimate.com/)
 
 
-
 ## Como Executar
 
 * No diretório base do projeto, execute: `$ docker-compose up`
+
+Após o fim da build, as aplicações estaráo disponiveis nos endpoints:
+
+* FrontEnd: http://localhost:8080/
+
+* BackEnd: http://localhost:3000/
 
 ## Para executar apenas os testes
 
