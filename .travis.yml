@@ -25,6 +25,4 @@ jobs:
 
   - stage: test
   - script: 
-    - docker-compose exec frontend bash
-    - yarn install
-    - yarn run test:unit
+    - sudo docker-compose run --rm frontend /test.sh
