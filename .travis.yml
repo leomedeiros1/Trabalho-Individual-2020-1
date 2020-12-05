@@ -1,0 +1,22 @@
+language: generic
+
+services:
+  - docker
+
+stages:
+  - build
+  - test
+
+env:
+  DOCKER_COMPOSE_VERSION: 1.27.2
+
+jobs:
+  - stage: build
+  - script: 
+    - docker-compose up
+
+  - stage: test
+  - script: 
+    - docker-compose exec frontend bash
+    - yarn install
+    - yarn run test:unit
