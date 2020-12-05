@@ -26,3 +26,5 @@ jobs:
   - stage: test
   - script: 
     - sudo docker-compose run --rm frontend /test.sh
+  - script:
+    - sudo docker-compose run --rm api /test.sh
