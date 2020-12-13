@@ -1,7 +1,6 @@
 FROM ruby:2.5.7
 
 WORKDIR /code
-
 COPY ./api_test.sh /test.sh
 
 RUN chmod +x /test.sh
